@@ -1,0 +1,649 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(223, 78, 6);
+  height: 50px;
+}
+.title h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  padding-top: 5px;
+  color: #eee;
+}
+.main-header {
+  padding: 10px 12px;
+  width: 100%;
+}
+.main-header .navigation1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+.main-header .logo {
+  display: flex;
+  justify-content: space-between;
+}
+.main-header .logo a {
+  display: block;
+  font-size: 100px;
+  color: rgb(223, 78, 6);
+  text-decoration: none;
+}
+.main-header .logo h3 {
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(223, 78, 6);
+}
+.main-header .logo h3 span {
+  font-size: 15px;
+  color: black;
+}
+.navigation1 .search input {
+  border-radius: 15px;
+  font-size: 20px;
+  border-color: rgb(223, 78, 6);
+  width: 300px;
+  text-align: center;
+  height: 50px;
+  padding: 17px 12px;
+}
+.navigation1 .links {
+}
+.navigation1 .links ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: rgb(223, 78, 6);
+  height: 60px;
+  border-radius: 15px;
+  width: auto;
+}
+.navigation1 .links ul li {
+  padding: 12px 10px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin: 10px;
+}
+.navigation1 .links ul li a {
+  display: block;
+  text-decoration: none;
+  color: #111;
+}
+.main-header .navigation2 {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px;
+}
+.main-header .navigation2 ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-transform: uppercase;
+}
+.main-header .navigation2 ul li {
+  margin-left: 12px;
+  margin-top: 15px;
+}
+.main-header .navigation2 ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+.main-header .navigation2 ul li a:hover {
+  color: blue;
+}
+.main-sec {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  width: 100%;
+  height: 70vh;
+  background-image: url(pexels-daniel-putzer-633409.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+.main-sec .shop {
+  text-align: end;
+
+  margin-right: 40px;
+}
+.main-sec h2 {
+  color: aliceblue;
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: end;
+  margin-top: 230px;
+  margin-right: 30px;
+  line-height: 40px;
+}
+.main-sec h2 span {
+  font-size: 25px;
+  font-weight: 800;
+  color: rgb(223, 78, 6);
+}
+.main-sec h2 .span3 {
+  font-size: 25px;
+  color: rgb(223, 78, 6);
+}
+.main-sec h2 .span2 {
+  font-size: 18px;
+}
+.main-sec .shop a {
+  display: block;
+  margin-left: 200px;
+  height: auto;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #eee;
+  border: 1px solid white;
+  border-radius: 18px;
+  width: auto;
+  text-align: center;
+  padding: 7px 15px;
+  transition: 0.5s;
+}
+.main-sec .shop a:hover {
+  color: rgb(142, 59, 59);
+}
+.categorise {
+  text-align: center;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+.categorise > h2 {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 13px;
+}
+.categorise > p {
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+.categorise .cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+.categorise .cards .card {
+  width: 21.4em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 10px 12px;
+}
+.categorise .cards .card:hover {
+  opacity: 0.9;
+}
+.categorise .cards .card a {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+  border-radius: 18px;
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+}
+.categorise .cards .card img {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  height: 200px;
+  width: 17em;
+}
+.categorise .cards .card .title {
+  text-align: center;
+  border-radius: 18px;
+}
+.categorise .cards .card .title h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.smart-phone {
+  text-align: center;
+  width: 100%;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+.smart-phone .cards {
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.smart-phone > h2 {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 40px;
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+}
+.smart-phone .smart-card {
+  width: 20em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 12px;
+  margin-left: 20px;
+  padding: 10px 12px;
+  margin-top: 20px;
+}
+.smart-phone .smart-card img {
+  width: 18em;
+  height: 270px;
+  border-radius: 18px;
+}
+.smart-phone .smart-card .inf {
+  text-align: center;
+}
+.smart-phone .smart-card .inf > h3 {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(223, 78, 6);
+  padding: 12px 0px;
+  border-radius: 18px;
+}
+.smart-phone .smart-card .inf a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 18px;
+  border: 1px solid;
+  margin-top: 15px;
+  padding-top: 5px;
+  height: 30px;
+}
+.tab-sec {
+  text-align: center;
+  padding-top: 30px;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+.tab-sec h2 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.tab-sec .tab-cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.tab-sec .tab-cards .tab-card {
+  width: 20em;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 18px;
+  padding: 12px 12px;
+  margin: 15px 16px;
+}
+.tab-sec .tab-cards .tab-card:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.tab-sec .tab-cards .tab-card img {
+  width: 18em;
+  height: 250px;
+}
+.tab-sec .tab-cards .tab-card .inf h3 {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(223, 78, 6);
+  padding: 12px 10px;
+  margin: 10px 10px;
+  border-radius: 18px;
+}
+.tab-sec .tab-cards .tab-card .inf a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid;
+  padding: 12px 10px;
+  margin: 5px 12px;
+  border-radius: 18px;
+  color: black;
+  font-weight: 800;
+}
+.lab-sec {
+  text-align: center;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+.lab-sec h2 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  padding: 15px 10px;
+}
+.lab-sec .lab-cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.lab-sec .lab-cards .lab-card {
+  width: 20em;
+  padding: 12px 14px;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 18px;
+}
+.lab-sec .lab-cards .lab-card img {
+  width: 18em;
+  height: 250px;
+  border-radius: 14px;
+}
+.lab-sec .lab-cards .lab-card .inf h3 {
+  font-size: 25px;
+  font-weight: 700;
+  background-color: rgb(223, 78, 6);
+  border-radius: 18px;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+.lab-sec .lab-cards .lab-card .inf a {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 18px;
+  padding: 10px 10px;
+  margin: 10px;
+}
+.air-sec {
+  text-align: center;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+.air-sec h2 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  padding: 15px 10px;
+}
+.air-sec .air-cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.air-sec .air-cards .air-card {
+  width: 20em;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 12px 15px;
+  padding: 15px;
+}
+.air-sec .air-cards .air-card img {
+  width: 18em;
+  border-radius: 18px;
+  height: 250px;
+}
+.air-sec .air-cards .air-card .inf h3 {
+  font-size: 25px;
+  font-weight: 800;
+  padding: 10px;
+  margin: 12px 12px;
+  background-color: rgb(223, 78, 6);
+  border-radius: 15px;
+}
+.air-sec .air-cards .air-card .inf a {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+  border: 1px solid;
+  border-radius: 18px;
+  margin: 10px 12px;
+  padding: 12px;
+}
+.google {
+  width: 100%;
+  text-align: center;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+.google h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 15px;
+  padding: 10px;
+}
+.google .cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.google .cards .google-card {
+  width: 20em;
+  margin: 15px 12px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 18px;
+}
+.google .cards .google-card img {
+  width: 18em;
+  height: 250px;
+  border-radius: 15px;
+}
+.google .cards .google-card .inf h3 {
+  font-size: 25px;
+  font-weight: 700;
+  background-color: rgb(223, 78, 6);
+  border-radius: 18px;
+  padding: 12px;
+  margin: 10px 15px;
+}
+.google .cards .google-card .inf a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  border-radius: 15px;
+  border: 1px solid;
+  margin: 10px 15px;
+  padding: 15px;
+}
+.huawei {
+  text-align: center;
+  width: 100%;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+.huawei h2 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+}
+.huawei .cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.huawei .cards .huawei-card {
+  width: 20em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 15px 12px;
+  padding: 15px;
+}
+.huawei .cards .huawei-card img {
+  width: 18em;
+  height: 250px;
+  border-radius: 15px;
+}
+.huawei .cards .huawei-card .inf h3 {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 15px;
+  margin: 10px 15px;
+  background-color: rgb(223, 78, 6);
+  border-radius: 15px;
+}
+.huawei .cards .huawei-card .inf a {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  padding: 15px;
+  margin: 10px 17px;
+  border: 1px solid;
+  border-radius: 18px;
+  text-decoration: none;
+}
+.xiaomi-sec {
+  text-align: center;
+  width: 100%;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+.xiaomi-sec h2 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+}
+.xiaomi-sec .cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.xiaomi-sec .cards .xiaomi-card {
+  width: 20em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 15px 12px;
+  margin: 15px 12px;
+}
+.xiaomi-sec .cards .xiaomi-card img {
+  width: 18em;
+  height: 250px;
+  border-radius: 15px;
+}
+.xiaomi-sec .cards .xiaomi-card .inf h3 {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 15px;
+  margin: 10px 15px;
+  border-radius: 15px;
+  background-color: rgb(223, 78, 6);
+}
+.xiaomi-sec .cards .xiaomi-card .inf a {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px 12px;
+  border: 1px solid;
+  border-radius: 15px;
+  color: black;
+}
+.foot {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(154, 91, 9);
+  width: 100%;
+  padding: 15px;
+}
+.foot .logo h3 {
+  font-size: 28px;
+  color: #eee;
+  font-weight: 600;
+}
+.foot .logo span {
+  color: rgb(218, 127, 9);
+}
+.foot .bye h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #eee;
+}
+/* start respom=nsive design */
+@media screen and (max-width: 767px) {
+  .main-header .navigation1 {
+    flex-wrap: wrap;
+  }
+  .main-header .navigation2 ul li {
+    margin-left: 5px;
+  }
+  .main-header .navigation2 ul li a {
+    font-size: 16px;
+  }
+  .main-sec {
+    width: 100vw;
+    min-height: 100vh;
+  }
+  .navigation1 .links ul li {
+    margin: 5px;
+  }
+  .navigation1 .links ul li a {
+  }
+  .categorise .cards {
+    flex-wrap: wrap;
+  }
+  .categorise .cards .card {
+    width: 16em;
+    margin: 15px;
+  }
+  .categorise .cards .card img {
+    width: 200px;
+    height: auto;
+  }
+  .tab-sec .tab-cards {
+    flex-wrap: wrap;
+  }
+  .lab-sec .lab-cards {
+    flex-wrap: wrap;
+  }
+  .air-sec .air-cards {
+    flex-wrap: wrap;
+  }
+  .google-card {
+    flex-wrap: nowrap;
+  }
+  .google-cards {
+    overflow: auto;
+    white-space: nowrap;
+  }
+}
+/* end responsive design */
